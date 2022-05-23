@@ -6,14 +6,10 @@ This application generates a random password based on user-selected criteria. Th
 Once all prompts are answered, the user will be presented with a password matching the answered prompts.
 This application is also responsive, ensuring that it adapts to multiple screen sizes.
 
-## Installation
+## URL
 
-Please visit the deployed project at: https://darianau.github.io/password-generator-js/ 
 
-## Usage
-Introduction to Javascript. See the detailed instructions below.
 
-![Image of the App](03-JavaScript-homework-demo.png)
 
 ### Instructions
 
