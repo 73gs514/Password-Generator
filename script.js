@@ -1,4 +1,3 @@
-// arrays that were needed to pick from
 var generateBtn = document.querySelector('#generate'); 
 var allLowerCase = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var allUpperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -6,13 +5,10 @@ var allNumbers = [1,2,3,4,5,6,7,8,9,0]
 var allSpec = ['~','!','@','$','%','^','&','*','?']
 
 
-
-// Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
 
 
-
-//function asking for desired password length
+//Password length function
 function getPassLength() {
   var passLength = prompt('Please enter your desired length.');
   if (passLength >= 8 && passLength <= 128){
@@ -22,7 +18,7 @@ function getPassLength() {
     return false;
   }
 }
-// function asking if you want uppercase letters
+// Upper Case function
 function getUpper() {
   var useUpper = (window.confirm('Would you like to use uppercase letters?'));
   if (!useUpper){
@@ -31,7 +27,7 @@ function getUpper() {
     return true
   }  
 }
-// function asking if you want lowercase letters
+// Lower Case function
 function getLower() {
   var useLower = (window.confirm('Would you like to use lowercase letters?'));
   if (!useLower){
@@ -40,7 +36,7 @@ function getLower() {
     return true
   }  
 }
-// function asking if you want special characters letters
+// Special Character function
 function getSpecial() {
   var useSpecial = (window.confirm('Would you like to use special characters?'));
   if (!useSpecial){
@@ -49,7 +45,7 @@ function getSpecial() {
     return true
   }   
 }
-// function asking if you want numbers to be used
+// Numbers Used function
 function getNumber() {
   var useNumber = (window.confirm('Would you like to use numbers?'));
   if (!useNumber){
@@ -67,7 +63,7 @@ function writePassword() {
    passwordText.value = password;
     
 }
-//password generation function
+//Password Generation function
 function generatePassword() {
   passLength = getPassLength(); 
 
@@ -96,7 +92,7 @@ function generatePassword() {
 }
 
 
-//function for verifying what criteria will be needed. Must pick one of the values
+//Function to verifying what criteria will be needed
 function compare(gotUpper, gotLower, gotSpecial, gotNumber) {
   passwordCharacterLists = [];
 
