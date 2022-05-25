@@ -63,7 +63,7 @@ function writePassword() {
    passwordText.value = password;
     
 }
-//Password Generation function
+// Password Generation function
 function generatePassword() {
   passLength = getPassLength(); 
 
@@ -92,7 +92,7 @@ function generatePassword() {
 }
 
 
-//Function to verifying what criteria will be needed
+// Function to verifying what criteria will be needed
 function compare(gotUpper, gotLower, gotSpecial, gotNumber) {
   passwordCharacterLists = [];
 
