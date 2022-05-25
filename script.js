@@ -8,7 +8,7 @@ var allSpec = ['~','!','@','$','%','^','&','*','?']
 generateBtn.addEventListener('click', writePassword);
 
 
-//Password length function
+// Password length function
 function getPassLength() {
   var passLength = prompt('Please enter your desired length.');
   if (passLength >= 8 && passLength <= 128){
@@ -56,7 +56,7 @@ function getNumber() {
 }
 
 
-// Write password to the #password input
+// Write the password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector('#password');
@@ -92,7 +92,7 @@ function generatePassword() {
 }
 
 
-// Function to verifying what criteria will be needed
+// Function verifying all criteria is met
 function compare(gotUpper, gotLower, gotSpecial, gotNumber) {
   passwordCharacterLists = [];
 
